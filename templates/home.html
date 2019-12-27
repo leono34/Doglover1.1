@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block body %}
+{% include 'includes/carrusel.html' %}
+
+<section id="services" class="p-5 bg-white u-fullScreen Services ">
+    <div class="container">
+      <article class="row ">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex ">
+          <article class="card mb-3">
+            <img height="226px" src="{{ url_for('static',filename='img/s7.png') }}" class="card-img-top" alt="rutina">
+            <div class="card-body">
+              <h5 class="card-title">Rutina</h5>
+              <p class="card-text">Mantener una rutina diaria significa mejor comportamiento y mayor inteligencia para
+                tu perro.</p> <br>
+              <a href="/about" class="btn btn-primary"   target="_blank" >Mas detalles</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex ">
+          <article class="row ">
+
+              <article class="card mb-3 ">
+                <img height="226px" src="{{ url_for('static',filename='img/s3.png') }}" class="card-img-top" alt="informacion">
+                <div class="card-body">
+                  <h5 class="card-title">Información</h5>
+                  <p class="card-text">Recibe noticias de tu paseador. Te mandará fotos para que
+                    puedas ver que tu perro.</p> <br>
+                  <a href="/about" class="btn btn-primary"  target="_blank" >Mas detalles</a>
+
+              </div></article>
+            </article></div>
+            <div class="col-12 col-sm-6 col-lg-3 d-flex ">
+              <article class="card mb-3 ">
+                <img height="226px" src="{{ url_for('static',filename='img/s4.png') }}" class="card-img-top" alt="informacion">
+                <div class="card-body">
+                  <h5 class="card-title">Conoce</h5>
+                  <p class="card-text">solicita un encuentro en persona con aquellos que te gusten</p> <br><br>
+                  <a href="/about" class="btn btn-primary"  target="_blank" >Mas detalles</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 d-flex ">
+              <article class="card mb-3 ">
+                <img height="226px" src="{{ url_for('static',filename='img/s5.png') }}" class="card-img-top" alt="informacion">
+                <div class="card-body">
+                  <h5 class="card-title">Encuentra</h5>
+                  <p class="card-text">paseadores y cuidadores calificados en tu zona</p> <br><br><br>
+                  <a href="/about" class="btn btn-primary"  target="_blank" >Mas detalles</a>
+                </div>
+              </article></div>
+          </article>
+        </div>
+{% include 'includes/testimonio.html' %}
+
+  </section>
+
+{% endblock %}

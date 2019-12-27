@@ -1,0 +1,33 @@
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark  p-0 ">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static',filename='img/logo.png') }}" alt="JohPet walker">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item p-2 "><a href="/">Home</a></li>
+                <li class="nav-item p-2 "><a href="#services">Servicios</a></li>
+                <li class="nav-item p-2 "><a href="/registrar">Registrarme</a></li>
+                <li class="nav-item p-2 "><a href="/login">Login</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if session.logged_in %}
+
+                <li class="nav-item p-2 "><a href="/logout">Logout</a></li>
+                {% else %}
+                <li class="nav-item p-2 "><a href="/registrar">Registrarme</a></li>
+
+                {% endif %}
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>

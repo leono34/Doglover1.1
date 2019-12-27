@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<article class="card bg-dark text-white border-0 rounded-0  pt-5 ">
+  <img class="card-img" src="{{ url_for('static',filename='img/pet1.jpg') }}" alt="Ana contreras">
+
+</article>
+<section id="about" class="container-fluid Packs  no-gutters px-0 ">
+    <article class="container pt-5">
+      <h1 class="u-flowText text-primary text-uppercase ">
+        ¿No puedes pasear a tu perro tanto como te gustaría? Solicita un cuidador para que pasee a tu perro el tiempo que necesite.
+      </h1>
+      <p class="u-flowText">
+        Cuéntanos un poco acerca de ti y tu mascota. Selecciona en el listado de cuidadores el que más te guste y se ajuste a las necesidades de tu perro.
+      </p>
+      <p class="u-flowText">
+        Confirma tu reserva, y deja a tu mascota en buenas manos mientras tienes que salir de la ciudad. Gudog es un servicio más cálido,
+        familiar y personalizado que las tradicionales residencias caninas que a algunos perros tan poco gustan. Además, ¡no te costará más caro!
+      </p>
+    </article>
+    <aside class="container-fluid no-gutters px-0 SinglePage"    >
+      <div class="u-fullScreeni d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row">
+            <article class="col-12 col-lg-6 offset-lg-6">
+              <a href="#interested" class="btn btn-lg active bg-success text-white border-0 float-left" role="button" aria-pressed="true">
+                <b>Desde $10 <small>USD</small></b>
+              </a>
+              <div class="clearfix pb-5"></div>
+              <h2>Cuidadores de mascotas 5 estrellas cerca de ti</h2>
+              <p>
+                Descubre cuidadores de mascotas y paseadores de perros en tu zona, lee reseñas y encuentra a su segundo mejor amigo. JohPetWallker ofrece:
+              </p>
+
+              <div class="row mt-3">
+                <div class="col">
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Protección de Reserva.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Una verificación de identidad.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    La Garantía  JohPetWalker.
+                  </p>
+                </div>
+                <div class="col">
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Pagos seguros en línea.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Expertos en Seguridad y Calidad.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Fotos y noticias.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside class="container-fluid px-0 no-gutters MultiPage">
+      <div class=" u-fullScreeni d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row">
+            <article class="col-12 col-lg-6">
+              <div class="clearfix pb-5"></div>
+              <h2>Buenos perros. Buena gente.</h2>
+              <p>
+                Tanto si necesitas a un paseador de perros durante el día como un alojamiento de perros durante un mes,
+                puedes encontrar a un cuidador Rover ideal para ti, tus mascotas y tu estilo de vida. Los cuidadores JohPetwalker ofrecen:
+              </p>
+              <div class="row mt-3">
+                <div class="col">
+                  <p>
+                    <i class="fas fa-check"></i>
+                   Cuidado de mascotas.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Paseo de perros.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Visitas a domicilio.
+                  </p>
+                </div>
+                <div class="col">
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Cuidado a domicilio.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                    Alojamiento de perros.
+                  </p>
+                  <p>
+                    <i class="fas fa-check"></i>
+                   Guardería de día.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+
+{% endblock %}

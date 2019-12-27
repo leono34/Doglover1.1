@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+    .form-group label {
+        color: black;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    body {
+        background: #a3cef9;
+    }
+
+    body {
+        background: url(./static/img/wua.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .container {
+        opacity: 0.95;
+    }
+
+</style>
+<div class="u-fullScreen pt-5 ">
+<div class="d-flex justify-content-center pt-5">
+<h1>Login</h1>
+</div>
+<div class="d-flex justify-content-center">
+<form action="" method="POST" class="col-lg-6 ">
+    <div class="form-group">
+        <label><b>Usuario :</b></label>
+        <input type="text" name="usuario" class="form-control" >
+    </div>
+      <div class="form-group">
+        <label><b>Contraseña :</b></label>
+        <input type="password" name="password" class="form-control" >
+    </div>
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+</div>
+</div>
+{% endblock %}l>

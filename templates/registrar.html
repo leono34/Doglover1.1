@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1>Alta de Nuevos Usuarios</h1>
+{% from "includes/_formhelpers.html" import render_field %}
+
+<style>
+
+    .form-group label {
+        color: black;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    body {
+        background: #a3cef9;
+    }
+
+    .p-3 {
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
+    }
+
+
+    body {
+     background: url(./static/img/wua.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .container {
+        opacity: 0.95;
+    }
+
+
+
+</style>
+<div class="d-flex justify-content-center">
+    <h1>Registro Clientes</h1>
+</div>
+<div class="d-flex justify-content-center">
+
+    <form method="POST" action="" class="formulario  col-lg-6 ">
+        <div class="form-group">
+            {{render_field(form.nombre,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.apellido,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.direccion,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.telefono,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.dni,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.usuario,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.correo,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.password,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.confirm,class="form-control")}}
+        </div>
+
+        <div class="form-group">
+            {{render_field(form.comentarios,class="form-control")}}
+        </div>
+
+        <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+    </form>
+</div>
+{% endblock %}

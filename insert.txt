@@ -1,0 +1,7 @@
+insert into cliente values (null, 'carlos', 'arteaga', 'av. los sauces 333 smp','986523356', 'carteaga@codigo.com');
+insert into cliente values (null, 'Adriana', 'Tarazona', 'av. mexico 2299 comas','986523322', 'atarazona@codigo.com');
+insert into cliente values (null, 'Cirilo', 'Mamani', 'av. argentina san miguel','986523311', 'cmamani@codigo.com');
+insert into cliente values (null, 'Pedro', 'Gallese', 'av. venezuela independencia','986523377', 'pgallese@codigo.com');
+insert into cliente values (null, 'Juan', 'Contrera', 'av. zarumilla 555 smp','986523388', 'jcontreras@codigo.com');
+insert into cliente values (null, 'Roxana', 'Salas', 'av. Palmeras 331 los olivos','986523350', 'rsalasga@codigo.com');
+insert into cliente values (null, 'Jose', 'Casasola', 'av. Priale 111 sta anita','986523351', 'jcasola@codigo.com');
